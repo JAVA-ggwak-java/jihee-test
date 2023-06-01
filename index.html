@@ -6,25 +6,32 @@
     <!-- 모바일 화면을 위한 meta 태그, 사용중인 장치와 동일하게 뷰포트의 너비를 설정-->
     <title>안녕하세요!</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/blue_rose.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
     <div class="logo">
-        <img src="images/blue_rose.png" alt="logo">
+        <h3>GHeeJeon</h3>
     </div>
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">about</a></li>
-            <li><a href="/products">skills</a></li>
-            <li><a href="/contact">resume</a></li>
-            <li><a href="/contact">portfolio</a></li>
-            <li><a href="/contact">contact</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<div class="container">
+<div class="container-profile">
     <div class="profile">
         <div class="profile-image">
             <img src="https://gheejeon.github.io/img/prof_pic.jpg" alt="profile">
@@ -33,10 +40,94 @@
             <h1>JiHee Jeon</h1>
             <p>Frontend developer</p>
         </div>
+
+        <div class="profile-icon">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-skype"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-rss"></a>
+        </div>
     </div>
 </div>
 
-<div class="new-container"></div>
+<div class="container-details">
+    <div class="details-introduction">
+        <h1>About me</h1>
+        <p>Hello! I am JiHee. <span class="highlight-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+        </p>
+    </div>
+    <div class="details-information">
+        <h2>Personal Details</h2>
+        <table>
+            <tr>
+                <th>Birthday date</th>
+                <td>07-01-1999</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>+82 10-1234-5678</td>
+            </tr>
+            <tr>
+                <th>E-mail</th>
+                <td>cv@jackbrown.com</td>
+            </tr>
+            <tr>
+                <th>Website</th>
+                <td>www.jackbrown.com</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>123 London, UK</td>
+            </tr>
+            <tr>
+                <th>Job status</th>
+                <td>
+                    <button type="button" class="btn btn-success">Freelance</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="details-interests">
+        <h2>My Interests</h2>
+        <div class="interest-buttons">
+            <div class="interest-button">
+                <i class="fa fa-icon"></i>
+                <span class="button-text">GAMES</span>
+            </div>
+            <div class="interest-button">
+                <i class="fa fa-icon"></i>
+                <span class="button-text">MUSIC</span>
+            </div>
+            <div class="interest-button">
+                <i class="fa fa-icon"></i>
+                <span class="button-text">TRAVEL</span>
+            </div>
+            <div class="interest-button">
+                <i class="fa fa-icon"></i>
+                <span class="button-text">MAC OS</span>
+            </div>
+            <div class="interest-button">
+                <i class="fa fa-icon"></i>
+                <span class="button-text">CINEMA</span>
+            </div>
+            <div class="interest-button">
+                <i class="fa fa-icon"></i>
+                <span class="button-text">COFFEE</span>
+            </div>
+            <div class="interest-button">
+                <i class="fa fa-icon"></i>
+                <span class="button-text">CARS</span>
+            </div>
+            <div class="interest-button">
+                <i class="fa fa-icon"></i>
+                <span class="button-text">MONEY</span>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

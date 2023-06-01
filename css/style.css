@@ -1,20 +1,20 @@
-
 body {
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.logo img {
+.logo h3 {
     float: left;
-    width: 4em;
-    margin-top: -1.25em;
+    color: #1fc5a9;
+    margin: 0 0 0 0;
 }
 
-.container {
+.container-profile {
     position: relative;
-    height: 25em;
+    height: 30em;
 }
 
-.container::before {
+.container-profile::before {
     content: "";
     position: absolute;
     top: 0;
@@ -44,7 +44,7 @@ nav ul {
 }
 
 nav li {
-    margin-left: 0.625em; /* 10px -> 0.625em 로 변경 */
+    margin-left: 0.625em;
 }
 
 nav a {
@@ -71,8 +71,8 @@ nav a:hover {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 17.5em;
-    height: 55%;
+    width: 20em;
+    height: 65%;
     background-color: #1e2326;
     border-radius: 2em ;
     z-index: -1; /* 배경 이미지를 뒤로 보내기 */
@@ -85,7 +85,7 @@ nav a:hover {
     overflow: hidden;
     margin: 0 auto 1em;
     border: 0.5em solid #1fc5a9; /* 테두리 스타일 및 색상 설정 */
-    box-shadow: 0 0 0.25em 1em #1fc5a970;
+    box-shadow: 0 0 0.1em 1.5em #1fc5a970;
 }
 
 .profile-image img {
@@ -96,8 +96,7 @@ nav a:hover {
 }
 
 .profile-name {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 2em;
     text-align: center;
 }
 
@@ -107,19 +106,165 @@ nav a:hover {
     color: #bbb;
 }
 
-.new-container {
-    background-color: #1e2326;
-    height: 100vh;
+.profile-icon {
+    text-align: center;
+    margin-top: 1em;
 }
 
+.profile-icon a {
+    display: inline-block;
+    margin: 0.5em;
+    text-decoration: none;
+    color: #bbbbbb;
+    border: 0.1em solid #bbbbbb;
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 1em;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.profile-icon a:hover {
+    color: #eee;
+    border-color: #eee;
+}
+
+.container-details {
+    background-color: #1e2326;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10% 0 10%;
+}
+
+.details-introduction {
+    width: 100%;
+}
+
+.details-introduction h1 {
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 1em 0 0.5em 0;
+    color: #eee;
+}
+
+.details-introduction h1::after {
+    content: "";
+    display: block;
+    height: 0.1em;
+    background-color: #1fc5a980;
+    margin: 0.25em auto;
+    width: 10%; /* 수평선의 너비 조정 */
+    flex: 1 1 100%;
+    padding: 0 10%;
+}
+
+.details-introduction p{
+    color: #1fc5a9;
+    width: 100%;
+    line-height: 1.5em;
+}
+
+.highlight-text {
+    color: #bbb;
+}
+
+.details-information,
+.details-interests {
+    flex: 0 0 calc(50% - 0%);
+    margin: 0 0 0 0;
+
+}
+
+.details-information,
+.details-interests h2{
+    color: #eee;
+}
+
+.details-information {
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+    color: #1fc5a9;
+}
+
+td {
+    color: #bbb;
+}
+
+tr:first-child {
+    border-top: none;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td:first-child {
+    border-left: none;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+
+.btn {
+    background-color: #1fc5a9 !important;
+    border: none; !important;
+    color: #eeeeee; !important;
+    padding: 0.5em 1em 0.5em 1em; !important;
+    border-radius: 0.3em; !important;
+    font-family: 'Ubuntu', sans-serif; !important;
+    letter-spacing: 0.2em; !important;
+}
+
+.details-interests {
+    /* 필요한 스타일을 추가하세요. */
+}
+
+.interest-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5em;
+}
+
+.interest-button {
+    flex-basis: 25%;
+    text-align: center;
+    box-shadow: 0 0 1em 0.5em #1e1e1e;
+    border-radius: 0.2em;
+    background-color: #242a2e;
+    color: #bbbbbb;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.interest-button i {
+    /* 아이콘에 대한 스타일을 지정합니다. */
+}
+
+.interest-button .button-text {
+    /* 텍스트에 대한 스타일을 지정합니다. */
+}
 
 /* 반응형 스타일 */
 @media screen and (max-width: 37.5em) {
     /* 화면 폭이 600px 이하일 때의 스타일 */
     .profile-image {
-        width: 9.375em; /* 150px -> 9.375em 로 변경 */
-        height: 9.375em; /* 150px -> 9.375em 로 변경 */
-        border: 0.3em solid #1fc5a9; /* 테두리 스타일 및 색상 설정 */
+        width: 9.375em;
+        height: 9.375em;
+        border: 0.3em solid #1fc5a9;
     }
 
     nav ul {
@@ -127,7 +272,7 @@ nav a:hover {
     }
 
     nav li {
-        margin-left: 0.313em; /* 5px -> 0.313em 로 변경 */
-        margin-right: 0.313em; /* 5px -> 0.313em 로 변경 */
+        margin-left: 0.313em;
+        margin-right: 0.313em;
     }
 }
