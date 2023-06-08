@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
     background-color: #1e2326;
+    box-sizing: border-box;
 }
 
 .logo h3 {
@@ -140,12 +141,14 @@ nav a:hover {
 
 .details-introduction {
     width: 100%;
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
 
 .details-introduction h1 {
     text-align: center;
     margin: 0 0 0 0;
-    padding: 1em 0 0.5em 0;
+    padding: 0 0 0.5em 0;
     color: #eee;
 }
 
@@ -237,7 +240,7 @@ td:last-child {
 .interest-buttons {
     display: flex;
     flex-wrap: wrap;
-    margin: -0.5em;
+    margin: 0.5em;
 }
 
 .interest-button {
