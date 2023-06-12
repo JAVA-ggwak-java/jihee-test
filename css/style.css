@@ -158,7 +158,7 @@ nav a:hover {
     height: 0.1em;
     background-color: #1fc5a980;
     margin: 0.25em auto;
-    width: 10%; /* 수평선의 너비 조정 */
+    width: 10%;
     flex: 1 1 100%;
     padding: 0 10%;
 }
@@ -223,18 +223,18 @@ td:last-child {
 }
 
 
-.btn {
-    background-color: #1fc5a9 !important;
-    border: none; !important;
-    color: #eeeeee; !important;
-    padding: 0.5em 1em 0.5em 1em; !important;
-    border-radius: 0.3em; !important;
-    font-family: 'Ubuntu', sans-serif; !important;
-    letter-spacing: 0.2em; !important;
+.freelance {
+    background-color: #1fc5a9;
+    border: none;
+    color: #eeeeee;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.3em;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.2em;
 }
 
 .details-interests {
-    /* 필요한 스타일을 추가하세요. */
+
 }
 
 .interest-buttons {
@@ -255,16 +255,15 @@ td:last-child {
 }
 
 .interest-button i {
-    /* 아이콘에 대한 스타일을 지정합니다. */
+
 }
 
 .interest-button .button-text {
-    /* 텍스트에 대한 스타일을 지정합니다. */
+
 }
 
 /* 반응형 스타일 */
 @media screen and (max-width: 37.5em) {
-    /* 화면 폭이 600px 이하일 때의 스타일 */
     .profile-image {
         width: 9.375em;
         height: 9.375em;
