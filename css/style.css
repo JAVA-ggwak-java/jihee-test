@@ -206,19 +206,19 @@ td {
     color: #bbb;
 }
 
-tr:first-child {
+tr:nth-child(1) {
     border-top: none;
 }
 
-tr:last-child {
+tr:nth-last-child(1) {
     border-bottom: none;
 }
 
-td:first-child {
+td:nth-child(1) {
     border-left: none;
 }
 
-td:last-child {
+td:nth-last-child(1) {
     border-right: none;
 }
 
